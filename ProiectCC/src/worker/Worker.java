@@ -17,7 +17,7 @@ public class Worker {
     public static void main(String [] args){
         try{
       Jedis redis = connectToRedis("127.0.0.1");
-      Connection dbConn = connectToDB("jdbc:postgresql:////localhost:5432/proiectdb");
+      Connection dbConn = connectToDB("jdbc:postgresql://localhost:5432/proiectdb");
         System.out.println("Inserting data");
         while(true){
             stergeDate(dbConn);
